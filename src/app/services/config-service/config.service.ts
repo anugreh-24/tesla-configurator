@@ -13,7 +13,7 @@ export class ConfigService {
 
   // Get config data from API endpoint.
   configs(id: string): Observable<object> {
-    let url = '/tesla-configurator/options/' + id;
+    let url = '/options/' + id;
     return this.http.get(url)
   }
 }
