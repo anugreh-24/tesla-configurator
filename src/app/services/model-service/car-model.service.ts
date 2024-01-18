@@ -13,6 +13,6 @@ export class CarModelService {
 
   // Get car models and colors data from API endpoint to populate step 1 dropdown values.
   getCarModels(): Observable<object> {
-    return this.http.get('/models')
+    return this.http.get('/tesla-configurator/models')
   }
 }
